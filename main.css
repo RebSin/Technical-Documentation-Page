@@ -1,10 +1,96 @@
-/* #navbar {
+ #navbar {
   display: flex;
   flex-direction: column;
-} */
+  position: fixed;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  margin-top: -3%;
+  overflow: auto;
+  height: 100%;
+  background-color: white;
+}
 
+#navbar a {
+  border-style: solid;
+  border-color: gray;
+  color: white;
+  border-width: thin;
+  font-size:120%;
+  background-color: black;
+}
 
+#JS_Documentation {
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: white;
+}
 
-/* User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
+.main-section{
+  margin-top: 3%;
+  margin-left: 35%;
+  margin-right: 5%;
+}
 
-User Story #15: My Technical Documentation page should use at least one media query. */
+header {
+  font-weight: bold;
+  font-size: 150%;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+  .main-section{
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+  }
+  p {
+    margin-left: 2%;
+    margin-right: 42%;
+  }
+  ul {
+    margin-left: 2%;
+    margin-right: 42%;
+  }
+  code {
+    margin-left: 2%;
+    margin-right: 42%;
+  }
+  header {
+    margin-left: 2%;
+    margin-right: 42%;
+  }
+  #navbar {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+  .main-section{
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+  }
+  p {
+    margin-left: 2%;
+    margin-right: 42%;
+  }
+  ul {
+    margin-left: 2%;
+    margin-right: 42%;
+  }
+  code {
+    margin-left: 2%;
+    margin-right: 42%;
+  }
+  header {
+    margin-left: 2%;
+    margin-right: 42%;
+  }
+  #navbar {
+    width: 30%;
+  }
+}
